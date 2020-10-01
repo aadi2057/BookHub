@@ -11,13 +11,13 @@ export const BOOKS = [
   },
   {
     id: 1,
-    name: "Advanced Deep Learning",
+    name: "HTML-5 Cheat Sheet",
     author: "Umberto Michelucci",
-    rating: "4",
-    image: "assets/images/deeplearning.jpg",
+    rating: "2",
+    image: "assets/images/html-5cheatsheet.jpg",
     price: "$200",
     description:
-      "Work with advanced topics in deep learning, such as optimization algorithms, hyper-parameter tuning, dropout, and error analysis as well as strategies to address typical problems encountered when training deep neural networks. You’ll begin by studying the activation functions mostly with a single neuron (ReLu, sigmoid, and Swish), seeing how to perform linear and logistic regression using TensorFlow, and choosing the right cost function. ",
+      "Work with advanced topics in HTML-5, new tags and attributes analysis as well as strategies to address typical problems encountered when training deep neural networks. You’ll begin by studying the activation functions mostly with a single neuron (ReLu, sigmoid, and Swish), seeing how to perform linear and logistic regression using TensorFlow, and choosing the right cost function. ",
   },
   {
     id: 2,

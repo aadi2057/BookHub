@@ -6,7 +6,6 @@ import {
   Collapse,
   NavItem,
   Nav,
-  Button,
   NavbarToggler,
 } from "reactstrap";
 
@@ -35,35 +34,24 @@ class Header extends Component {
           <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink className="nav-link" to="/home">
-                  <i className="fa fa-home fa-lg"></i> Home
+                <NavLink className="nav-link" active to="/home">
+                  <i className="fa fa-home"></i> Dashboard
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="nav-link" to="/aboutus">
-                  <i className="fa fa-info fa-lg"></i> About Us
+                  <i className="fa fa-info"></i> About Us
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="nav-link" to="/menu">
-                  <i className="fa fa-list fa-lg"></i> Menu
+                  <i className="fa fa-list"></i> Menu
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink className="nav-link" to="/contactus">
-                  <i className="fa fa-address-card fa-lg"></i> Contact Us
+                  <i className="fa fa-address-card"></i> Contact Us
                 </NavLink>
-              </NavItem>
-            </Nav>
-            <Nav dark className="ml-auto" navbar>
-              <NavItem>
-                <Button
-                  className="text-light"
-                  outline
-                  onClick={this.toggleModal}
-                >
-                  <i className="fa fa-sign-in "></i> Login
-                </Button>
               </NavItem>
             </Nav>
           </Collapse>
