@@ -39,4 +39,18 @@
 
 .cards:hover {
   box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.testimonial-group > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.testimonial-group > .row > .books {
+  display: inline-block;
+  float: none;
+}
+
+.undecorated-font:hover {
+  text-decoration: none;
 }
