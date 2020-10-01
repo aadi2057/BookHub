@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import {
   Navbar,
   NavbarBrand,
-  NavLink,
   Collapse,
   NavItem,
   Nav,
   NavbarToggler,
 } from "reactstrap";
+
+import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class Header extends Component {
           <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink className="nav-link" active to="/home">
+                <NavLink className="nav-link" to="/home">
                   <i className="fa fa-home"></i> Dashboard
                 </NavLink>
               </NavItem>

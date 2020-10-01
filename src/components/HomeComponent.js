@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "./HeaderComponent";
 import Menu from "./Menu Component";
 
 function Home(props) {
   return (
     <div>
-      <Header />
-      <Menu books={props.books} />
+      <h4>Home</h4>
     </div>
   );
 }
