@@ -4,7 +4,9 @@ import Header from "./HeaderComponent";
 import Menu from "./Menu Component";
 import Detail from "./BookDetailComponent";
 import Contact from "./ContactUsComponent";
+import Media from "./MediaComponent";
 import { BOOKS } from "../shared/books";
+import { COMMENTS } from "../shared/comments";
 import { Switch, Route, Redirect } from "react-router-dom";
 
 class Main extends Component {
@@ -13,6 +15,7 @@ class Main extends Component {
 
     this.state = {
       books: BOOKS,
+      comments: COMMENTS,
     };
   }
 
@@ -25,6 +28,9 @@ class Main extends Component {
               (dish) => dish.id === parseInt(match.params.dishId, 10)
             )[0]
           }
+          comments={this.state.comments.filter(
+            (comment) => comment.bookId === parseInt(match.params.bookId)
+          )}
         />
       );
     };
@@ -40,6 +46,11 @@ class Main extends Component {
             component={() => <Menu books={this.state.books} />}
           />
           <Route path="/menu/:dishId" component={BookWithId} />
+          <Route
+            exact
+            path="/media"
+            component={() => <Media books={this.state.books} />}
+          />
           <Route exact path="/contactus" component={() => <Contact />} />
           <Redirect to="/home" />
         </Switch>

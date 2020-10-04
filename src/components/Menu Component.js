@@ -3,14 +3,14 @@ import {
   Card,
   CardImg,
   CardTitle,
-  Button,
-  ButtonGroup,
   CardText,
   CardBody,
   Badge,
   Breadcrumb,
   BreadcrumbItem,
 } from "reactstrap";
+import Button from "@material-ui/core/Button";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
 import { Link } from "react-router-dom";
 
 function RenderMenuItem({ book }) {
@@ -43,8 +43,18 @@ function RenderMenuItem({ book }) {
             </a>
           </CardText>
           <ButtonGroup>
-            <Button className="btn btn-danger float-right">Read Now</Button>
-            <Button className="btn btn-light btn-outline-danger float-right">
+            <Button
+              variant="contained"
+              color="secondary"
+              className="btn float-right"
+            >
+              Read Now
+            </Button>
+            <Button
+              variant="outlined"
+              color="secondary"
+              className="float-right"
+            >
               Recommend
             </Button>
           </ButtonGroup>

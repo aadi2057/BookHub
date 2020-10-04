@@ -12,7 +12,7 @@ export const BOOKS = [
   {
     id: 1,
     name: "HTML-5 Cheat Sheet",
-    author: "Umberto Michelucci",
+    author: "Aaditya Jha",
     rating: "2",
     image: "assets/images/html-5cheatsheet.jpg",
     price: "$200",
@@ -22,7 +22,7 @@ export const BOOKS = [
   {
     id: 2,
     name: "Advanced Deep Learning",
-    author: "Umberto Michelucci",
+    author: "Netra Adhikari",
     rating: "4",
     image: "assets/images/deeplearning.jpg",
     price: "$200",
@@ -40,7 +40,7 @@ export const BOOKS = [
       "Work with advanced topics in deep learning, such as optimization algorithms, hyper-parameter tuning, dropout, and error analysis as well as strategies to address typical problems encountered when training deep neural networks. You’ll begin by studying the activation functions mostly with a single neuron (ReLu, sigmoid, and Swish), seeing how to perform linear and logistic regression using TensorFlow, and choosing the right cost function. ",
   },
   {
-    id: 3,
+    id: 4,
     name: "Advanced Deep Learning",
     author: "Umberto Michelucci",
     rating: "4",
@@ -50,7 +50,7 @@ export const BOOKS = [
       "Work with advanced topics in deep learning, such as optimization algorithms, hyper-parameter tuning, dropout, and error analysis as well as strategies to address typical problems encountered when training deep neural networks. You’ll begin by studying the activation functions mostly with a single neuron (ReLu, sigmoid, and Swish), seeing how to perform linear and logistic regression using TensorFlow, and choosing the right cost function. ",
   },
   {
-    id: 3,
+    id: 5,
     name: "Advanced Deep Learning",
     author: "Umberto Michelucci",
     rating: "4",
@@ -60,7 +60,7 @@ export const BOOKS = [
       "Work with advanced topics in deep learning, such as optimization algorithms, hyper-parameter tuning, dropout, and error analysis as well as strategies to address typical problems encountered when training deep neural networks. You’ll begin by studying the activation functions mostly with a single neuron (ReLu, sigmoid, and Swish), seeing how to perform linear and logistic regression using TensorFlow, and choosing the right cost function. ",
   },
   {
-    id: 3,
+    id: 6,
     name: "Advanced Deep Learning",
     author: "Umberto Michelucci",
     rating: "4",
@@ -70,7 +70,7 @@ export const BOOKS = [
       "Work with advanced topics in deep learning, such as optimization algorithms, hyper-parameter tuning, dropout, and error analysis as well as strategies to address typical problems encountered when training deep neural networks. You’ll begin by studying the activation functions mostly with a single neuron (ReLu, sigmoid, and Swish), seeing how to perform linear and logistic regression using TensorFlow, and choosing the right cost function. ",
   },
   {
-    id: 3,
+    id: 7,
     name: "Advanced Deep Learning",
     author: "Umberto Michelucci",
     rating: "4",
