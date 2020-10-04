@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -7,7 +6,6 @@ import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
 import SendIcon from "@material-ui/icons/Send";
 import PlaylistAddIcon from "@material-ui/icons/PlaylistAdd";
-import cyan from "@material-ui/core/colors/cyan";
 import {
   CardActions,
   Button,
@@ -24,23 +22,25 @@ function Media(props) {
       <Card
         className="cards"
         boxShadow={1}
-        style={{ maxWidth: 345 }}
+        style={{ maxWidth: 500 }}
         className="col-12 col-md-3 m-4 "
       >
         <CardHeader
           avatar={
-            <Avatar title={book.author} aria-label="recipe">
-              A
-            </Avatar>
+            <Avatar
+              src="assets/images/avatar.png"
+              title={book.author}
+              aria-label="recipe"
+            ></Avatar>
           }
           action={
             <Tooltip
               TransitionComponent={Zoom}
-              TransitionProps={{ timeout: 600 }}
+              TransitionProps={{ timeout: 400 }}
               title="Add to Collections"
               aria-label="add"
             >
-              <Fab color="secondary">
+              <Fab color="secondary" size="small" className="ml-1">
                 {" "}
                 <PlaylistAddIcon />
               </Fab>
